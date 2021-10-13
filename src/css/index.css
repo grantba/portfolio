@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap"); */
 
 /* Variables */
 :root {
@@ -19,14 +19,17 @@
 /* Variables end */
 
 html {
-  scroll-behavior: smooth;
-}
+    scroll-behavior: smooth;
+    background-image: url('https://wallup.net/wp-content/uploads/2018/09/26/985016-color-rendering-background.jpg');
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 
 /* CSS Resets */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 ul {
@@ -35,11 +38,12 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--primary-color);
+  font-size: 1rem;
+  color: #fc1173;
 }
 
 a:hover {
-  color: var(--secondary-color);
+  color: #fc1173;
 }
 
 body {
@@ -56,21 +60,20 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); */
 }
 
 nav h1 {
-    color: var(--primary-color);
+    color: #fc1173;
 }
 
 nav a {
-    color: var(--primary-color);
-    transition: var(--transition);
+    color: #fc1173;
 }
 nav a:hover {
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
+    color: white;
+    border-bottom: 2px solid white;
 }
 
 nav ul {
@@ -83,28 +86,62 @@ nav ul li {
 }
 
 .dropdown {
-    color: var(--primary-color);
+    color: #fc1173;
     font-size: 2rem;
     border: 0;
     background-color: transparent;
     cursor: pointer;
     display: none;
 }
+/* 
+#content {
+    padding-top: 1rem;
+} */
 
-#about {
+#profile {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
+    flex-direction: row;
+}
+
+#profile {
+    width: 100px;
+    margin: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+#tabs {
+    background-color: white;
+    width: 100px;
+    margin: 50px;
+    text-align: right;
+    line-height: 50px;
+    font-size: 25px;
 }
 
 .profile-img {
     border-radius: 50%;
     margin: 50px;
+    border:black solid;
 }
 
-#bio {
-    background-color: white;
-    padding: 50px;
+.info h2 {
+    color: black;
+    text-align: left;
+    font-family: var(--font-family);
+    font-style: var(--bolder-font);
+    margin-left: 1.5rem;
+    font-size: 3rem;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: #fc1173;
+    text-align: center;
+    padding: 15px;
+  }
