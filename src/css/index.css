@@ -24,7 +24,7 @@ body {
     background-size: cover;  
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: var(--font-family);
+    font-family: cursive, var(--font-family);
 }
 
 /* CSS Resets */
@@ -63,25 +63,35 @@ nav {
 
 nav h1 {
     color: #fc1173;
+    font-family: cursive, var(--font-family);
+    font-style: var(--bolder-font);
+    font-weight: 525;
 }
 
 nav a {
     color: #fc1173;
     font-size: 1.5rem;
+    text-decoration: none;
 }
 nav a:hover {
     color: white;
     border-bottom: 2px solid white;
     text-decoration: none;
+    cursor: pointer;
 }
 
 nav ul {
     display: flex;
-    gap: 1.9rem;
+    gap: 2.3rem;
 }
 
 nav ul li {
     font-weight: var(--bold-font);
+}
+
+.title {
+    font-family: cursive, var(--font-family);
+    font-style: var(--bold-font);
 }
 
 .dropdown {
@@ -93,10 +103,6 @@ nav ul li {
     display: none;
 }
 
-/* #fixed {
-    scroll-behavior: unset;
-} */
-
 #tabs {
     background-color: white;
     font-size: 25px;
@@ -104,6 +110,9 @@ nav ul li {
 
 #fixed {
     padding-top: 15rem;
+    height: 100vh;
+    position: relative;
+    display: inline-block;
 }
 
 #profile-img {
@@ -114,15 +123,18 @@ nav ul li {
 }
 
 #info {
-    padding-top: 23%;
     color: black;
     text-align: left;
-    font-family: var(--font-family);
+    font-family: cursive, var(--font-family);
     font-style: var(--bolder-font);
-    font-weight: 525;
+    font-weight: 550;
     margin-left: 1.6rem;
     font-size: 5rem;
     position: fixed;
+    left: 0;
+    right: 0;
+    top: 66%; /* Adjust this value to move the positioned div up and down */
+    width: 60%; /* Set the width of the positioned div */
 }
 
 .footer {
@@ -133,5 +145,48 @@ nav ul li {
     background-color: black;
     color: #fc1173;
     text-align: center;
-    padding: 15px;
+    padding: 12px;
   }
+
+  .links a {
+    white-space: nowrap;
+  }
+
+  .links h2 {
+    font-family: cursive, var(--font-family);
+    display: inline-block;
+    color: black;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: #fc1173; 
+}
+
+a:link { 
+    font-family: cursive, var(--font-family);
+    text-decoration: none; 
+}
+
+#videos {
+    border: 10px black solid;
+    padding: 2% 8% 2% 8%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+
+#videos a {
+    color: black;
+}
+
+#videos a:hover {
+    color: #fc1173;
+    cursor: pointer;
+}
+
+#videos p {
+    font-family: cursive, var(--font-family);
+    font-size: large;
+}
