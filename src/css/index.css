@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
 /* Variables */
 :root {
@@ -18,13 +18,14 @@
 }
 /* Variables end */
 
-html {
-    scroll-behavior: smooth;
+body {
+    /* scroll-behavior: smooth; */
     background-image: url('https://wallup.net/wp-content/uploads/2018/09/26/985016-color-rendering-background.jpg');
     background-size: cover;  
     background-repeat: no-repeat;
     background-attachment: fixed;
-  }
+    font-family: var(--font-family);
+}
 
 /* CSS Resets */
 * {
@@ -38,7 +39,6 @@ ul {
 
 a {
   text-decoration: none;
-  font-size: 1rem;
   color: #fc1173;
 }
 
@@ -46,13 +46,10 @@ a:hover {
   color: #fc1173;
 }
 
-body {
-  font-family: var(--font-family);
-  /* cursor: url('assets/images/bee.png'), auto; */
-}
 
 nav {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
@@ -70,10 +67,12 @@ nav h1 {
 
 nav a {
     color: #fc1173;
+    font-size: 1.5rem;
 }
 nav a:hover {
     color: white;
     border-bottom: 2px solid white;
+    text-decoration: none;
 }
 
 nav ul {
@@ -93,46 +92,35 @@ nav ul li {
     cursor: pointer;
     display: none;
 }
-/* 
-#content {
-    padding-top: 1rem;
+
+/* #fixed {
+    scroll-behavior: unset;
 } */
-
-#profile {
-    display: flex;
-    flex-direction: row;
-}
-
-#profile {
-    width: 100px;
-    margin: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 25px;
-}
 
 #tabs {
     background-color: white;
-    width: 100px;
-    margin: 50px;
-    text-align: right;
-    line-height: 50px;
     font-size: 25px;
+    padding: 15%;
 }
 
-.profile-img {
+#fixed {
+    padding-top: 15rem;
+}
+
+#profile-img {
     border-radius: 50%;
     margin: 50px;
     border:black solid;
 }
 
-.info h2 {
+#info {
     color: black;
     text-align: left;
     font-family: var(--font-family);
     font-style: var(--bolder-font);
-    margin-left: 1.5rem;
-    font-size: 3rem;
+    font-weight: 525;
+    margin-left: 1rem;
+    font-size: 5rem;
 }
 
 .footer {

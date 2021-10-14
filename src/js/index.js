@@ -1,8 +1,6 @@
 const content = document.getElementById('content');
 const navbar = document.getElementById('navbar');
 
-setPage();
-
 navbar.addEventListener("click", (event) => eventHandler(event));
 
 function eventHandler(event) {
@@ -20,25 +18,6 @@ function eventHandler(event) {
     }
 };
 
-function setPage() {
-    const div = document.createElement('div');
-    content.appendChild(div);
-    div.innerHTML = 
-    `<div id="profile">   
-    <div id="profile-image">
-            <img
-                src='assets/images/profile-image.png';
-                alt="profile-picture"
-                loading="lazy"
-                class="profile-img"
-            />
-            <div class="info"><h2>Full Stack Software Engineer</h2></div>
-        </div>
-        <div id="tabs"></div>
-    </div>
-    `
-}
-
 const profile = document.getElementById('profile');
 const tabs = document.getElementById('tabs');
 
@@ -47,7 +26,7 @@ function setAboutPage() {
         tabs.innerText = "";
     }
     tabs.innerHTML =
-    `<div id="tabs" style="padding: 10px";>
+    `<div id="tabs">
     <h2 id="bio-title">About Me</h2><br>
     <p class="bio-text">
         I’m a Registered Nurse by trade but have always had an interest in tech and said 
@@ -70,7 +49,7 @@ function setAboutPage() {
 function setSkillsPage() {
     tabs.innerText = "";
     tabs.innerHTML =
-    `<div id="tabs" style="padding: 10px";>
+    `<div id="tabs">
         <h2 id="skills-title">Skills</h2><br>
         <p class="skills-text">
             Technical Skills: Ruby, Rails
