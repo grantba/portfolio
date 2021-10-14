@@ -100,7 +100,6 @@ nav ul li {
 #tabs {
     background-color: white;
     font-size: 25px;
-    padding: 15%;
 }
 
 #fixed {
@@ -111,16 +110,19 @@ nav ul li {
     border-radius: 50%;
     margin: 50px;
     border:black solid;
+    position: fixed;
 }
 
 #info {
+    padding-top: 23%;
     color: black;
     text-align: left;
     font-family: var(--font-family);
     font-style: var(--bolder-font);
     font-weight: 525;
-    margin-left: 1rem;
+    margin-left: 1.6rem;
     font-size: 5rem;
+    position: fixed;
 }
 
 .footer {

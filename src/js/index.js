@@ -25,8 +25,9 @@ function setAboutPage() {
     if (tabs.innerText !== '') {
         tabs.innerText = "";
     }
+    tabs.style = "padding: 8% 2% 8% 2%";
     tabs.innerHTML =
-    `<div id="tabs">
+    `
     <h2 id="bio-title">About Me</h2><br>
     <p class="bio-text">
         I’m a Registered Nurse by trade but have always had an interest in tech and said 
@@ -42,19 +43,18 @@ function setAboutPage() {
         my favorite thing to do is plan another trip to Disney World....my happy place. 
         I love all things Disney!
     </p>
-    </div>
     `
 }
 
 function setSkillsPage() {
     tabs.innerText = "";
+    tabs.style = style="padding: 8% 2% 8% 2%";
     tabs.innerHTML =
-    `<div id="tabs">
+    `
         <h2 id="skills-title">Skills</h2><br>
         <p class="skills-text">
             Technical Skills: Ruby, Rails
         </p>
         </div>
-    </div>
     `
 }
