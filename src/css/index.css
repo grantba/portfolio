@@ -181,6 +181,10 @@ a:link {
     color: black;
 }
 
+iframe {
+    border: black solid;
+}
+
 #videos a:hover {
     color: #fc1173;
     cursor: pointer;
